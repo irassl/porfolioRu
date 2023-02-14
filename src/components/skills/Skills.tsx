@@ -20,7 +20,7 @@ import scss from '../../assets/serviceImages/other/scss.png'
 import thunk from '../../assets/serviceImages/other/thunk.png'
 import unit from '../../assets/serviceImages/other/unit.png'
 
-export const Services = () => {
+export const Skills = () => {
     const initialSkills = [react, redux, js, ts]
     const initialOtherSkills = [
         { url: html5, title: "HTML" },
@@ -39,7 +39,7 @@ export const Services = () => {
     return (
         <section id='services' className={style.bgDark}>
             <div className={style.container}>
-                <TitleB title={' Что я могу сделать?'} bgTitle={'Services'}/>
+                <TitleB title={' Что я могу сделать?'} bgTitle={'Skills'}/>
                 <div className={style.content}>
                     <div className={style.contentCol}>
                         <ul className={style.mySkills}>
