@@ -2,21 +2,21 @@ export  const educationDetails = [
 
     {
         yearRange: "2014 - 2019",
-        title: "Bachelor Degree",
-        place: "Ufa State Aviation Technical University",
-        desc: "Applied Informatics.",
+        title: "Бакалавриат ",
+        place: "Уфимский государственный авиационный технический университет",
+        desc: "Прикладная информатика.",
     },
     {
         yearRange: "2019 - 2021",
-        title: "Master Degree",
-        place: "Kazan National Research Technical University named after A.N. Tupolev–KAI",
-        desc: "Computer Science and Engineering.",
+        title: "Магистратура",
+        place: "Казанский национальный исследовательский технический университет им. А.Н. Туполева—КАИ",
+        desc: "Информатика и вычислительная техника.",
     },
     {
         yearRange: "2022 - 2023",
-        title: "Learning React",
-        place: "At IT Incubator",
-        desc: "Computer Science and Engineering.",
+        title: "Курсы Frontend",
+        place: "IT Incubator",
+        desc: "Изучение Frontend разработки на React.",
     },
 ];
 
