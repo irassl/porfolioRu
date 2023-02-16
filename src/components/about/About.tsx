@@ -16,13 +16,16 @@ export const About = () => {
                         <p className={"text-white-50"}>
                             Я бы описал себя как целеустремленного и трудолюбивого человека с опытом создания SPA,
                             с использованием React, Redux, JavaScript, TypeScript, Axios, React-Router-Dom,
-                            HTML, CSS, SCSS. Сейчас я совершенствую свои навыки в этом
+                            HTML, CSS, SCSS. Сейчас я совершенствую свои знания, умения и навыки в этом
                             направлении и расширяю их с помощью новых технологий.
                         </p>
                         <p className={"text-white-50"}>
-                            Delivering work within time and budget which meets client’s
-                            requirements is our moto. Lorem Ipsum has been the industry's
-                            standard dummy text ever when an unknown printer took a galley.
+                            Мое увлечение компюьтерами началось с детства. Мне было интересно, что находится
+                            внутри, из чего состоят компьютеры и какие у них возможности. Обучение в
+                            университе научило и помогло структуривать мои знания информационных техноголий и применять их
+                            на практике.
+
+
                         </p>
                     </div>
                     <div className={style.personal}>

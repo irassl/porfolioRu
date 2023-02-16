@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Home.module.scss'
 
-import intro from "../../assets/images/intro-bg.jpg";
+import intro from "../../assets/images/intro-bgMy.jpg";
 import Typewriter from "typewriter-effect";
 import {Link} from "react-scroll";
 import {ChevronDownIcon} from "@primer/octicons-react";

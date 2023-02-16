@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+.backToTop {
+  /*border-radius: 50%;*/
+  /*display: inline;*/
+  display: none;
+  position: fixed;
+  z-index: 1030;
+  bottom: 8px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  width: 44px;
+  height: 44px;
+  line-height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition:  all 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  &:hover {
+    background-color: #20c997;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    transition:  all 0.3s ease-in-out;
+  }
+
+}
