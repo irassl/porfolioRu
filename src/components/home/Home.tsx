@@ -10,6 +10,11 @@ export const Home = () => {
     const social = {
         backgroundImage: 'url(' + intro + ')'
     }
+    const handleNavClick = (section:string)  => {
+
+        // @ts-ignore
+        document.getElementById(section).scrollIntoView({ behavior: "smooth" });
+    };
     return (
         <section id='home'>
             <div className={style.homeWrap}>
@@ -25,7 +30,7 @@ export const Home = () => {
                                     <Typewriter
                                         options={{
                                             strings: [
-                                                "Я Ризвано Расул.",
+                                                "Я Ризванов Расул",
                                                 "Я Frontend-разработчик.",
                                             ],
                                             autoStart: true,
@@ -46,7 +51,7 @@ export const Home = () => {
                                     className={style.btnContact}
                                     onClick={() => {
                                         // e.preventDefault();
-                                        // handleNavClick("contact");
+                                         handleNavClick("contact");
                                     }}
                                 >
                                    Связатся со мной
