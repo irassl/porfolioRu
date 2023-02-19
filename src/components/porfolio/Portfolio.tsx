@@ -30,10 +30,10 @@ export const Portfolio = () => {
                         {projectsData.length > 0 &&
                             projectsData.map((project,index)=>(
                                 <motion.div key={index}  className={style.project}  layoutId={project.id} onClick={() => handleOpenPopup(project.id)} >
-                                 <motion.div className={style.projectBox}>
-                                     <motion.div className={style.projectBoxImg}>
-                                         <motion.img src={project.thumbImage} className={style.boxImg} />
-                                         <motion.div className={style.projectBoxOverlay}>
+                                 <div className={style.projectBox}>
+                                     <div className={style.projectBoxImg}>
+                                         <img src={project.thumbImage} className={style.boxImg} />
+                                         <div className={style.projectBoxOverlay}>
                                              {/*<motion.a*/}
                                              {/*    className={style.stretchedLink}*/}
                                              {/*    href=""*/}
@@ -45,12 +45,12 @@ export const Portfolio = () => {
                                              {/*    // }}                                                 // data-bs-toggle="modal"*/}
                                              {/*    // data-bs-target="#exampleModal"*/}
                                              {/*/>*/}
-                                             <motion.div className={style.projectBoxOverlayDetails}>
-                                                 <motion.h5>{project.title}</motion.h5>
-                                             </motion.div>
-                                         </motion.div>
-                                     </motion.div>
-                                 </motion.div>
+                                             <div className={style.projectBoxOverlayDetails}>
+                                                 <h5>{project.title}</h5>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
                                 </motion.div>
                             ))
                         }

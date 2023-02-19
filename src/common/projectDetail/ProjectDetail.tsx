@@ -14,7 +14,7 @@ export const ProjectDetail = ({closePopup, selectedId,  project}: ProjectPopupPr
     return (
         <motion.div className={style.modal} tabIndex={-1}>
             <motion.div layoutId={selectedId} className={style.dialog}>
-                <motion.div className={style.content}>
+                <div className={style.content}>
                     <div className={style.contentBody}>
                         <button
                             type="button"
@@ -71,7 +71,7 @@ export const ProjectDetail = ({closePopup, selectedId,  project}: ProjectPopupPr
 
                     </div>
 
-                </motion.div>
+                </div>
 
                 {/*<motion.button onClick={() => closePopup()} />*/}
             </motion.div>

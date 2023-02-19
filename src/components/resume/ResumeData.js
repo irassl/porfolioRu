@@ -23,20 +23,20 @@ export  const educationDetails = [
 export const experienceDetails = [
     {
         yearRange: "2016 - 2017",
-        title: "Technician",
-        place: "UGATU department informatics",
-        desc: "Ensuring the operability of computer equipment, software configuration.",
+        title: "Техник",
+        place: "УГАТУ кафедра информатики",
+        desc: "Обеспечение работоспособности компьютерного оборудования.",
     },
     {
         yearRange: "2017 - 2019",
-        title: "Engineer",
-        place: "UfaNet department network management center",
-        desc: "network status monitor, fault diagnosis,transmission of fault information to other departments.",
+        title: "Инженер",
+        place: "Уфанет отдел Центр управления сетью",
+        desc: "Мониторинг состояния сети, диагностика неисправностей, передача информации о неисправностях в другие подразделения.",
     },
     {
-        yearRange: "2019 - to date",
-        title: "Engineer 2 categories",
-        place: "TelecomIntegration",
-        desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+        yearRange: "2019 - по настоящее время",
+        title: "Инженер 2 категории",
+        place: "Телеком Интеграция депортамер консалдинга",
+        desc: "Тестирование производительность Систем хранений данный. Развертывание/сопровождение кластера Nutanix.",
     },
 ];
