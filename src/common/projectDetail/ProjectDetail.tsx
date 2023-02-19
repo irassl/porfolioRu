@@ -36,18 +36,18 @@ export const ProjectDetail = ({closePopup, selectedId,  project}: ProjectPopupPr
                                 </div>
                                 <div className={style.containerContent}>
                                     <h4 className={"text-4 font-weight-600"}>
-                                        Project Info:
+                                        Информация о проекте:
                                     </h4>
                                     <p>
                                         {project?.projectInfo}
                                     </p>
-                                    <h4>
-                                        Project Details:
-                                    </h4>
+                                    {/*<h4>*/}
+                                    {/*    Project Details:*/}
+                                    {/*</h4>*/}
                                     <ul className={style.list}>
                                         <li>
                                             <span>
-                                                Technologies:
+                                                Стек технологий:
                                             </span>
                                             {project?.technologies}
                                         </li>

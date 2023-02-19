@@ -1,5 +1,5 @@
 import projectTodolist from '../../assets/projects/project-todolist.png'
-import project2Img from '../../assets/projects/project-2.jpg'
+import projectCards from '../../assets/projects/project-cards.png'
 import projectAviasales from '../../assets/projects/project-aviasales.png'
 import project4Img from '../../assets/projects/project-4.jpg'
 import project5Img from '../../assets/projects/project-5.jpg'
@@ -30,7 +30,7 @@ export const projectsData = [
     },
     {
         id: '2',
-        title: "Project Title 2",
+        title: "Friday Project Cards",
         projectInfo:
             "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
         client: "Ruby Clinton",
@@ -38,8 +38,8 @@ export const projectsData = [
         industry: "Art & Design",
         date: "July 16, 2019",
         url: {
-            name: "www.example.com",
-            link: "https://www.example.com",
+            name: "https://github.com/JuliOgogo/friday-project",
+            link: "https://juliogogo.github.io/friday-project/#/login",
         },
         socialLinks: {
             facebook: "http://www.facebook.com/",
@@ -48,7 +48,7 @@ export const projectsData = [
             instagram: "http://www.instagram.com/",
             mail: "mailto:example@gmail.com",
         },
-        thumbImage: project2Img,
+        thumbImage: projectCards,
         sliderImages: [
             "images/projects/project-2.jpg",
             "images/projects/project-5.jpg",
@@ -58,7 +58,9 @@ export const projectsData = [
         id: '3',
         title: "Aviasales Test Frontend",
         projectInfo:
-            "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+            "Основной frontend проект нашей команды — это страница выдачи билетов со множеством фильтров, настроек и, собственно, билетов. Проект написан на React, поэтому тестовое задание приближено к ежедневным задачам.\n" +
+            "\n" +
+            "Перед тобой упрощенный макет нашего проекта — список билетов, фильтры и сортировка. Также у нас есть небольшой сервер для тестового задания, который работает схоже с нашим основным backend движком и реализует технику long polling для передачи пачек билетов. Тебе необходимо реализовать клиент, который будет получать случайно сгенерированные билеты от сервера и отрисует интерфейс согласно макету в Figma. Достаточно будет отрендерить 5 первых билетов соотвествующих выбранным фильтрам и сортировки.",
         client: "Ruby Clinton",
         technologies: "HTML5, CSS3, JS, TS, React, Redux",
         industry: "Art & Design",

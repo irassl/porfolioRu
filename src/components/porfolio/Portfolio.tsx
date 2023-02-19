@@ -22,7 +22,7 @@ export const Portfolio = () => {
         <>
             <section id="portfolio" className={style.section}>
                 <div className={style.container}>
-                    <TitleB title={'My Work'} bgTitle={'Portfolio'}/>
+                    <TitleB title={'Мои проекты'} bgTitle={'Portfolio'}/>
                     <div className={style.portfolio}>
 
 
