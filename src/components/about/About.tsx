@@ -39,7 +39,7 @@ export const About = () => {
                                     <a href="mailto:rassl.ried@icloud.com">rassl.ried@icloud.com</a>
                                 </li>
                                 <li>
-                                    <span>Возрос:</span>32
+                                    <span>Возрост:</span>32
                                 </li>
                                 <li className="border-0">
                                     <span className="fw-600 me-2">Из:</span>Уфа, Башкортостан
