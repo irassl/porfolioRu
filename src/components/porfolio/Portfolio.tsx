@@ -1,13 +1,14 @@
-import React, {useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import style from './Portfolio.module.scss'
 import {AnimatePresence} from "framer-motion";
 import { motion } from "framer-motion"
 import {projectsData} from "./ProjectsData";
 import {TitleB} from "../../common/titleB/TitleB";
 import {ProjectDetail} from "../../common/projectDetail/ProjectDetail";
-
+import Isotope from "isotope-layout";
 
 export const Portfolio = () => {
+    const isotope = useRef<HTMLDivElement | null >(null);
     const [selectedId, setSelectedId] = useState<string >('')
     const [selectedProjectDetails, setSelectedProjectDetails] = useState<any>();
     const handleOpenPopup = (id: string) => {
@@ -18,6 +19,19 @@ export const Portfolio = () => {
     const handleClosePopup = () => {
         setSelectedId('')
     }
+    useEffect(()=>{
+
+
+
+        // @ts-ignore
+        isotope.current = new Isotope('Portfolio_portfolioFilter__RIhcl',{
+            itemSelector: 'Portfolio_project__EAoAq',
+            layoutMode: "masonry"
+            }
+        )
+
+    },[])
+
     return (
         <>
             <section id="portfolio" className={style.section}>
@@ -26,7 +40,7 @@ export const Portfolio = () => {
                     <div className={style.portfolio}>
 
 
-                    <div className={style.portfolioFilter}>
+                    <div className={style.portfolioFilter} ref={isotope}>
                         {projectsData.length > 0 &&
                             projectsData.map((project,index)=>(
                                 <motion.div key={index}  className={style.project}  layoutId={project.id} onClick={() => handleOpenPopup(project.id)} >

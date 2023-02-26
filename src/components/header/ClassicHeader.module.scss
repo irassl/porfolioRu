@@ -56,9 +56,6 @@
 }
 
 .containerFixed {
-
-
-  //
   display: flex !important;
   height: auto !important;
   left: 0;
@@ -211,6 +208,7 @@
   }
 
   li {
+    cursor: pointer;
     box-sizing: border-box;
     color: white;
     padding: 0 0 0 15px;
@@ -218,10 +216,18 @@
     height: 100%;
     //color: #444;
     margin-bottom: 0;
+    &:hover {
+      color: #20c997;
+    }
+
 
   }
 }
-
+.activeNav{
+  //background-color: transparent;
+  color: #20c997 !important;
+  //border-bottom: 3px solid  #20c997;
+}
 .contentNavRow {
   box-sizing: border-box;
   display: block;
@@ -273,11 +279,11 @@
 
     position: relative;
 
-    &:focus {
-      color: #20c997;
-      -webkit-transition: all 0.2s ease;
-      transition: all 0.2s ease;
-    }
+    //&:focus {
+    //  color: #20c997;
+    //  -webkit-transition: all 0.2s ease;
+    //  transition: all 0.2s ease;
+    //}
   }
 }
 

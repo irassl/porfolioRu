@@ -1,6 +1,6 @@
 import React, { useEffect, useState} from 'react';
 import style from './ClassicHeader.module.scss'
-import {Link} from "react-scroll";
+import Link from 'react-scroll/modules/components/Link';
 import logo from '../../assets/images/logo5.png'
 import {SocialIcons} from "../../common/socialIcons/SocialIcons";
 
@@ -69,11 +69,11 @@ export const ClassicHeader = () => {
                                     <Link
                                         smooth
                                         duration={500}
-                                        style={{cursor: "pointer"}}
+                                     //   style={{cursor: "pointer"}}
                                         spy
-                                        activeClass="active"
+                                        activeClass={style.activeNav}
                                         to="home"
-
+                                        offset={- 1}
                                         onClick={() => {
 
                                             setIsNavModalClose(false);
@@ -86,9 +86,9 @@ export const ClassicHeader = () => {
                                     <Link
                                         smooth
                                         duration={500}
-                                        style={{cursor: "pointer"}}
+                                       // style={{cursor: "pointer"}}
                                         spy
-                                        activeClass="active"
+                                        activeClass={style.activeNav}
                                         to="about"
 
                                         onClick={() => {
@@ -102,9 +102,9 @@ export const ClassicHeader = () => {
                                     <Link
                                         smooth
                                         duration={500}
-                                        style={{cursor: "pointer"}}
+                                      //  style={{cursor: "pointer"}}
                                         spy
-                                        activeClass="active"
+                                        activeClass={style.activeNav}
                                         to="services"
                                         onClick={() => {
 
@@ -114,29 +114,14 @@ export const ClassicHeader = () => {
                                         What I Do
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link
-                                        smooth
-                                        duration={500}
-                                        style={{cursor: "pointer"}}
-                                        spy
-                                        activeClass="active"
-                                        to="resume"
 
-                                        onClick={() => {
-                                            setIsNavModalClose(false);
-                                        }}
-                                    >
-                                        Resume
-                                    </Link>
-                                </li>
                                 <li>
                                     <Link
                                         smooth
                                         duration={500}
-                                        style={{cursor: "pointer"}}
+                                       // style={{cursor: "pointer"}}
                                         spy
-                                        activeClass="active"
+                                        activeClass={style.activeNav}
                                         to="portfolio"
 
                                         onClick={() => {
@@ -151,9 +136,25 @@ export const ClassicHeader = () => {
                                     <Link
                                         smooth
                                         duration={500}
-                                        style={{cursor: "pointer"}}
-                                        activeClass="active"
-                                        to="contact"
+                                        // style={{cursor: "pointer"}}
+                                        spy
+                                        activeClass={style.activeNav}
+                                        to="resume"
+
+                                        onClick={() => {
+                                            setIsNavModalClose(false);
+                                        }}
+                                    >
+                                        Resume
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        smooth
+                                        duration={500}
+                                       // style={{cursor: "pointer"}}
+                                        activeClass={style.activeNav}
+                                        to="footer"
 
                                         onClick={() => {
 
