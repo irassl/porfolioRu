@@ -1,7 +1,8 @@
 import React from 'react';
 import style from './Abount.module.scss'
 import {TitleB} from "../../common/titleB/TitleB";
-
+// @ts-ignore
+import resumeFile from "../../documents/resume.pdf";
 
 export const About = () => {
     return (
@@ -46,7 +47,7 @@ export const About = () => {
                                 </li>
                             </ul>
                             <a
-                                href={'resumeFile'}
+                                href={resumeFile}
                                 download
                                 className={style.btn}
                             >
